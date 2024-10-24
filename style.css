@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #F6F0EB;
+    font-family: "Poppins", serif;
+    
+}
+
+nav{
+    background-color: rgba(255, 255, 255, 0.673);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding-inline: 50px;
+    position: fixed;
+    width: 100%;
+}
+
+.logo{
+    margin-right: auto;
+}
+
+.logo img{
+    width: 60px;
+    height: 60px;
+}
+
+.nav-links ul{
+    display: flex;
+    gap: 40px;
+    margin-left: auto;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #492118;
+    font-weight: 700;
+}
+
+.nav-link:hover{
+    text-decoration: underline;
+}
+
+#hero-section{
+    padding-top: 100px;
+    padding-bottom: 60px;
+    padding-inline : 40px;
+}
+
+.hero-image{
+    margin: 0 auto;
+    max-width: 1290px;
+}
+
+.hero-image img{
+    width: 100%;
+}
+
+.hero-text p{
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 10px;
+    color: #492118;
+}
+
+.link-desc{
+    margin-inline : 60px;
+    margin-bottom: 100px;
+}
+
+.containers{
+    padding-top: 100px;
+}
+
+.containers h1{
+    color: #492118;
+    font-size: 35px;
+    padding-bottom: 1.5rem;
+    text-align: center;
+}
+
+.container-img{
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.container-img img{
+    width: 100%;
+}
+.go-to-top{
+    color: #492118;
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+}
+
+.footer{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.ham-menu{
+    width: 30px;
+    height: 40px;
+    position: relative;
+    margin-left: auto;
+    cursor: pointer;
+    display: none;
+}
+
+.ham-menu span{
+    height: 5px;
+    width: 100%;
+    background-color: #492118;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ham-menu span:nth-child(1){
+    top: 25%;
+}
+.ham-menu span:nth-child(3){
+    top: 75%;
+}
+
+.ham-menu.active span:nth-child(1){
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.ham-menu.active span:nth-child(3){
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+.ham-menu.active span:nth-child(2){
+    opacity: 0;
+}
